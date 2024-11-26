@@ -25,11 +25,16 @@ func physics_update(delta: float) -> void:
 		return
 
 	move()
-	#player.move_and_slide()
 
 func move():
-	player.isMoving = true
 	player.animation_tree.set("parameters/Walk/blend_position", input_dir)
+	
+	player.ray_cast.target_position = input_dir * TILE_SIZE / 2
+	player.ray_cast.force_raycast_update()
+	if player.ray_cast.is_colliding():
+		return
+
+	player.isMoving = true
 
 	var tween: Tween = create_tween()
 	tween.tween_property(player, "position", player.position + input_dir * TILE_SIZE, ANIMATION_DURATION)
