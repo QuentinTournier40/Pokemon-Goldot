@@ -1,8 +1,10 @@
 class_name Player extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var animation_tree: AnimationTree = $AnimationTree
 
 var isMoving: bool = false
 
 func _ready() -> void:
-	animated_sprite.play("walk_down", 0)
+	animation_tree.set("parameters/Idle/blend_position", Vector2.DOWN)
+	animation_tree.set("parameters/Walk/blend_position", Vector2.DOWN)
