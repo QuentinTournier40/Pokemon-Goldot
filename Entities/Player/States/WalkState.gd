@@ -25,8 +25,7 @@ func physics_update(delta: float) -> void:
 		return
 
 	move()
-	player.move_and_slide()
-
+	#player.move_and_slide()
 
 func move():
 	player.isMoving = true
