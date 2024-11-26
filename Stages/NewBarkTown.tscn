@@ -5,3 +5,26 @@
 [node name="Town" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_jg3jb")]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 32.0
+offset_right = 48.0
+offset_bottom = 16.0
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect"]
+layout_mode = 0
+offset_top = 16.0
+offset_right = 16.0
+offset_bottom = 32.0
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect"]
+layout_mode = 0
+offset_left = 32.0
+offset_right = 48.0
+offset_bottom = 16.0
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect/ColorRect"]
+layout_mode = 0
+offset_top = 16.0
+offset_right = 16.0
+offset_bottom = 32.0
