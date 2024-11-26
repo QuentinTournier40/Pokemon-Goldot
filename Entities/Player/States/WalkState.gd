@@ -1,7 +1,7 @@
 extends PlayerState
 
 const TILE_SIZE = 16
-const ANIMATION_DURATION = 0.35
+const ANIMATION_DURATION = 0.25
 
 var input_dir = Vector2.ZERO
 
