@@ -26,6 +26,9 @@ func physics_update(delta: float) -> void:
 
 	move()
 
+func exit() -> void:
+	player.animation_tree.set("parameters/conditions/isMoving", false)
+
 func move():
 	player.animation_tree.set("parameters/Walk/blend_position", input_dir)
 	
