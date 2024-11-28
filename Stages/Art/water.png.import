@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvp4k7q0u58ax"
-path="res://.godot/imported/rose.png-c5c8767bb8af3e46cde4f26229e49382.ctex"
+uid="uid://g37mhyjxk7b"
+path="res://.godot/imported/water.png-5f7635d3158ec752923a321113ca045c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Stages/rose.png"
-dest_files=["res://.godot/imported/rose.png-c5c8767bb8af3e46cde4f26229e49382.ctex"]
+source_file="res://Stages/Art/water.png"
+dest_files=["res://.godot/imported/water.png-5f7635d3158ec752923a321113ca045c.ctex"]
 
 [params]
 
