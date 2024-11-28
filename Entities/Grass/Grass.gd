@@ -11,14 +11,11 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
-		printerr("Enter")
 		moving_grass.set_visible(true)
 		foreground_3.set_z_index(26)
 		foreground_4.set_z_index(26)
 
-
 func _on_body_exited(body: Node2D) -> void:
-	printerr("Exit")
 	foreground_3.set_z_index(1)
 	foreground_4.set_z_index(1)
 	moving_grass.set_visible(false)
