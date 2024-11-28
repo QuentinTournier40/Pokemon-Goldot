@@ -11,55 +11,29 @@ size = Vector2(16, 16)
 position = Vector2(4, 4)
 script = ExtResource("1_t73yu")
 
-[node name="Background1" type="Sprite2D" parent="."]
-position = Vector2(-4, -4)
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
 texture = ExtResource("1_iy38n")
-hframes = 2
+vframes = 2
 
-[node name="Background2" type="Sprite2D" parent="."]
-position = Vector2(4, -4)
-texture = ExtResource("1_iy38n")
-hframes = 2
-
-[node name="Background3" type="Sprite2D" parent="."]
-position = Vector2(-4, 4)
-texture = ExtResource("1_iy38n")
-hframes = 2
-
-[node name="Background4" type="Sprite2D" parent="."]
-position = Vector2(4, 4)
-texture = ExtResource("1_iy38n")
-hframes = 2
-
-[node name="Foreground1" type="Sprite2D" parent="."]
+[node name="ForegroundTop" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(-4, -4)
+texture_repeat = 2
+position = Vector2(0, -4)
 texture = ExtResource("1_iy38n")
-hframes = 2
-frame = 1
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
 
-[node name="Foreground2" type="Sprite2D" parent="."]
+[node name="ForegroundBottom" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(4, -4)
+texture_repeat = 2
+position = Vector2(0, 4)
 texture = ExtResource("1_iy38n")
-hframes = 2
-frame = 1
-
-[node name="Foreground3" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(-4, 4)
-texture = ExtResource("1_iy38n")
-hframes = 2
-frame = 1
-
-[node name="Foreground4" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(4, 4)
-texture = ExtResource("1_iy38n")
-hframes = 2
-frame = 1
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
 
 [node name="MovingGrass" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(0, 1)
 texture = ExtResource("3_ocosq")
 
