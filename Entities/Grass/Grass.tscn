@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://chn0fol2dcjnh"]
+
+[ext_resource type="Texture2D" uid="uid://byxr133ju1ujr" path="res://Entities/Grass/Art/grass.png" id="1_iy38n"]
+[ext_resource type="Script" path="res://Entities/Grass/Grass.gd" id="1_t73yu"]
+[ext_resource type="Texture2D" uid="uid://dyv2yt30rov07" path="res://Entities/Grass/Art/grass_animation.png" id="3_ocosq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2tkh5"]
+size = Vector2(16, 16)
+
+[node name="Grass" type="Area2D"]
+position = Vector2(4, 4)
+script = ExtResource("1_t73yu")
+
+[node name="Background1" type="Sprite2D" parent="."]
+position = Vector2(-4, -4)
+texture = ExtResource("1_iy38n")
+hframes = 2
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(4, -4)
+texture = ExtResource("1_iy38n")
+hframes = 2
+
+[node name="Background3" type="Sprite2D" parent="."]
+position = Vector2(-4, 4)
+texture = ExtResource("1_iy38n")
+hframes = 2
+
+[node name="Background4" type="Sprite2D" parent="."]
+position = Vector2(4, 4)
+texture = ExtResource("1_iy38n")
+hframes = 2
+
+[node name="Foreground1" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(-4, -4)
+texture = ExtResource("1_iy38n")
+hframes = 2
+frame = 1
+
+[node name="Foreground2" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(4, -4)
+texture = ExtResource("1_iy38n")
+hframes = 2
+frame = 1
+
+[node name="Foreground3" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(-4, 4)
+texture = ExtResource("1_iy38n")
+hframes = 2
+frame = 1
+
+[node name="Foreground4" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(4, 4)
+texture = ExtResource("1_iy38n")
+hframes = 2
+frame = 1
+
+[node name="MovingGrass" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+texture = ExtResource("3_ocosq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.1, 0.1)
+shape = SubResource("RectangleShape2D_2tkh5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="ready" from="." to="." method="_on_ready"]

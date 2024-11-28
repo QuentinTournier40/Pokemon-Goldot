@@ -325,7 +325,7 @@ position = Vector2(8, 8)
 shape = SubResource("RectangleShape2D_cr5fi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -4)
+position = Vector2(0, -3)
 texture = ExtResource("2_cdicc")
 offset = Vector2(8, 8)
 hframes = 10
