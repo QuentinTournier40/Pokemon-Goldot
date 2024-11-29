@@ -317,6 +317,7 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 graph_offset = Vector2(-97.084, -47.4996)
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 26
 script = ExtResource("1_kdel3")
 metadata/_edit_horizontal_guides_ = [-16.0]
 
