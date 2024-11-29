@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcjyvidb8skxc"]
+
+[ext_resource type="Script" path="res://Common/TeleportManagement/Portal2D.gd" id="1_46dp3"]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_46dp3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
